@@ -1,0 +1,17 @@
+C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\JXCconverter.exe
+C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\JXCconverter.deps.json
+C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\JXCconverter.runtimeconfig.json
+C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\JXCconverter.dll
+C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\JXCconverter.pdb
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.dll
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\refint\JXCconverter.dll
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.pdb
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.genruntimeconfig.cache
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\ref\JXCconverter.dll
+C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\Spectre.Console.dll
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.csproj.CopyComplete
