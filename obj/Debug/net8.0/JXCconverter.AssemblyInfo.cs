@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JXCconverter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71e39467a319aaaefe82e0ce9cf8fc6315be0d0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+733b68d26c56efa4c0bc849e78dd0ee012ac3d11")]
 [assembly: System.Reflection.AssemblyProductAttribute("JXCconverter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JXCconverter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

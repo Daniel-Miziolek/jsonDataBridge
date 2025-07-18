@@ -31,12 +31,12 @@ namespace JXCconverter
                         if (IsContainGoodExension(folderOrFile))
                         {
                             var txtInFile = File.ReadAllText(folderOrFile);
-                            var result = JsonParser.Parse(txtInFile);
-                            Console.WriteLine(result);
+                            JsonValue value = JsonParser.Parse(txtInFile);
+                            JsonTreePrinter.Print(value);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong file. Allowed extensions {JSON, XML, CSV}");
+                            Console.WriteLine("Wrong file. Allowed extensions {JSON}");
                         }
                         break;
                     }
@@ -66,7 +66,7 @@ namespace JXCconverter
 
         static bool IsContainGoodExension(string path)
         {
-            string[] allowedExtensions = [".json", ".xml", ".csv"];
+            string[] allowedExtensions = [".json"];
             return allowedExtensions.Contains(Path.GetExtension(path), StringComparer.OrdinalIgnoreCase);
         }
     }
