@@ -31,7 +31,8 @@ namespace JXCconverter
                         if (IsContainGoodExension(folderOrFile))
                         {
                             var txtInFile = File.ReadAllText(folderOrFile);
-                            Console.WriteLine(txtInFile);
+                            var result = JsonParser.Parse(txtInFile);
+                            Console.WriteLine(result);
                         }
                         else
                         {

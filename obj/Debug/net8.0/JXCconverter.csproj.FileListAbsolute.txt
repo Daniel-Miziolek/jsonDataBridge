@@ -15,3 +15,4 @@ C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\ref\JXCconverter.dll
 C:\Users\Daniel\Desktop\c#\JXCconverter\bin\Debug\net8.0\Spectre.Console.dll
 C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.csproj.AssemblyReference.cache
 C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.csproj.CopyComplete
+C:\Users\Daniel\Desktop\c#\JXCconverter\obj\Debug\net8.0\JXCconverter.sourcelink.json
