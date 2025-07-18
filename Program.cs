@@ -7,12 +7,16 @@ namespace JsonDataBridge
         static void Main()
         {
             string path = ChooseDrive();
+            Stack<string> pathHistory = new Stack<string>();
 
             while (true)
             {
                 try
                 {
-                    var entries = Directory.GetFileSystemEntries(path);
+                    var entries = Directory.GetFileSystemEntries(path).ToList();
+
+                    entries.Insert(0, "Go back");
+                    entries.Insert(1, "Exit");
 
                     var folderOrFile = AnsiConsole.Prompt(
                         new SelectionPrompt<string>()
@@ -23,6 +27,7 @@ namespace JsonDataBridge
 
                     if (Directory.Exists(folderOrFile))
                     {
+                        pathHistory.Push(path);
                         path = folderOrFile;
                     }
                     else if (File.Exists(folderOrFile))
@@ -39,6 +44,22 @@ namespace JsonDataBridge
                             Console.WriteLine("Wrong file. Allowed extensions {JSON}");
                         }
                         break;
+                    }
+                    else if (folderOrFile == "Go back")
+                    {
+                        if (pathHistory.Count > 0)
+                        {
+                            path = pathHistory.Pop();
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                    else if (folderOrFile == "Exit")
+                    {
+                        pathHistory.Clear();
+                        return;
                     }
                 }
                 catch (Exception ex)
