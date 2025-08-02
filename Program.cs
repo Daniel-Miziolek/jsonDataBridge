@@ -20,7 +20,7 @@ namespace JsonDataBridge
 
                     var folderOrFile = AnsiConsole.Prompt(
                         new SelectionPrompt<string>()
-                            .Title("Choose file to read")
+                            .Title("Select a file to create the data bridge")
                             .MoreChoicesText("[grey](Move up and down to reveal more files)[/]")
                             .AddChoices(entries)
                     );
@@ -33,7 +33,7 @@ namespace JsonDataBridge
                     else if (File.Exists(folderOrFile))
                     {
                         Console.WriteLine($"Choosen file: {folderOrFile}");
-                        if (IsContainGoodExension(folderOrFile))
+                        if (IsJsonFile(folderOrFile))
                         {
                             var txtInFile = File.ReadAllText(folderOrFile);
                             JsonValue value = JsonParser.Parse(txtInFile);
@@ -41,7 +41,7 @@ namespace JsonDataBridge
                         }
                         else
                         {
-                            Console.WriteLine("Wrong file. Allowed extensions {JSON}");
+                            Console.WriteLine("Wrong file. Allowed extension: .json");
                         }
                         break;
                     }
@@ -85,10 +85,9 @@ namespace JsonDataBridge
             );
         }
 
-        static bool IsContainGoodExension(string path)
+        static bool IsJsonFile(string path)
         {
-            string[] allowedExtensions = [".json"];
-            return allowedExtensions.Contains(Path.GetExtension(path), StringComparer.OrdinalIgnoreCase);
+            return string.Equals(Path.GetExtension(path), ".json", StringComparison.OrdinalIgnoreCase);
         }
     }
 }
