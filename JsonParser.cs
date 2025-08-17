@@ -91,8 +91,17 @@ public static class JsonParser
         while (true)
         {
             char c = reader.Next();
+
             if (c == '"') break;
-            if (c == '\\') c = reader.Next();
+            if (c == '\0') throw new Exception("Expected '\"'");
+            if (c == '\\')
+            {
+                c = reader.Next();
+                if (c == '\0')
+                {
+                    throw new Exception("Unterminated escape sequence in string");
+                }
+            }
             sb.Append(c);
         }
 
