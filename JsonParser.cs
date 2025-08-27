@@ -1,3 +1,7 @@
+using JsonDataBridge.Values;
+
+namespace JsonDataBridge;
+
 public static class JsonParser
 {
     public static JsonValue Parse(string json)

@@ -1,3 +1,5 @@
+namespace JsonDataBridge.Values;
+
 public class JsonObject : JsonValue
 {
     public Dictionary<string, JsonValue> Properties { get; } = new();

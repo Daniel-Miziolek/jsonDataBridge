@@ -1,4 +1,7 @@
+using JsonDataBridge.Values;
 using Spectre.Console;
+
+namespace JsonDataBridge;
 
 public static class JsonTreePrinter
 {

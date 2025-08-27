@@ -1,3 +1,5 @@
+namespace JsonDataBridge.Values;
+
 public class JsonBool : JsonValue
 {
     public bool Value { get; set; }

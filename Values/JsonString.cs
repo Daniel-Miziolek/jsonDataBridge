@@ -1,3 +1,5 @@
+namespace JsonDataBridge.Values;
+
 public class JsonString : JsonValue
 {
     public string Value { get; set; }

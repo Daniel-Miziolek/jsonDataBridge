@@ -1,3 +1,5 @@
+namespace JsonDataBridge;
+
 public class JsonReader
 {
     private readonly string _text;
